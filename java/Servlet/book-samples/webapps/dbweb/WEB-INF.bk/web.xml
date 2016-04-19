@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"> 
+	
+	
+		
+<!--	
+    <resource-ref>
+        <res-ref-name>jdbc/myds</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+-->
+
+
+    <!--invokerサーブレットがdisableでも動作するための設定-->
+    <servlet>
+        <servlet-name>DataSourceTest</servlet-name>
+        <servlet-class>websample.DataSourceTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DataSourceTest</servlet-name>
+        <url-pattern>/servlet/websample.DataSourceTest</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RowSetSelectServlet</servlet-name>
+        <servlet-class>websample.RowSetSelectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RowSetSelectServlet</servlet-name>
+        <url-pattern>/servlet/websample.RowSetSelectServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SelectServlet</servlet-name>
+        <servlet-class>websample.SelectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectServlet</servlet-name>
+        <url-pattern>/servlet/websample.SelectServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SelectServlet2</servlet-name>
+        <servlet-class>websample.SelectServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectServlet2</servlet-name>
+        <url-pattern>/servlet/websample.SelectServlet2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SelectServlet3</servlet-name>
+        <servlet-class>websample.SelectServlet3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectServlet3</servlet-name>
+        <url-pattern>/servlet/websample.SelectServlet3</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SimpleFindTest</servlet-name>
+        <servlet-class>websample.SimpleFindTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SimpleFindTest</servlet-name>
+        <url-pattern>/servlet/websample.SimpleFindTest</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SimpleUpdateTest</servlet-name>
+        <servlet-class>websample.SimpleUpdateTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SimpleUpdateTest</servlet-name>
+        <url-pattern>/servlet/websample.SimpleUpdateTest</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>WhereSelectServlet</servlet-name>
+        <servlet-class>websample.WhereSelectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WhereSelectServlet</servlet-name>
+        <url-pattern>/servlet/websample.WhereSelectServlet</url-pattern>
+    </servlet-mapping>
+	
+</web-app>

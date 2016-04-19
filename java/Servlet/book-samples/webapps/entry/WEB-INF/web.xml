@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5">
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>BarServlet</servlet-name>
+        <servlet-class>foo.BarServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>OracleServlet</servlet-name>
+        <servlet-class>OracleServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>NowServlet</servlet-name>
+        <servlet-class>foo.NowServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HelloHtmlServlet</servlet-name>
+        <servlet-class>HelloHtmlServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HelloTextServlet</servlet-name>
+        <servlet-class>HelloTextServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>OmojanServlet</servlet-name>
+        <servlet-class>foo.OmojanServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/HelloServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>BarServlet</servlet-name>
+        <url-pattern>/BarServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>OracleServlet</servlet-name>
+        <url-pattern>/OracleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>NowServlet</servlet-name>
+        <url-pattern>/NowServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloHtmlServlet</servlet-name>
+        <url-pattern>/HelloHtmlServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloTextServlet</servlet-name>
+        <url-pattern>/HelloTextServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>OmojanServlet</servlet-name>
+        <url-pattern>/OmojanServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_19" class="java.beans.XMLDecoder"> 
+ <object class="java.util.Vector"> 
+  <void method="add"> 
+   <object class="cookie.BBSMessage"> 
+    <void property="message"> 
+     <string>いいい</string> 
+    </void> 
+    <void property="remoteAddress"> 
+     <string>10.0.2.15</string> 
+    </void> 
+    <void property="user"> 
+     <string>あああ</string> 
+    </void> 
+    <void property="userAgent"> 
+     <string>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)</string> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

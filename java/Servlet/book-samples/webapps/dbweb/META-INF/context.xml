@@ -1,0 +1,13 @@
+<Context>
+
+    <Resource name="jdbc/myds" auth="Container" 
+        type="javax.sql.DataSource"
+        username="sa" password="" 
+        driverClassName="org.hsqldb.jdbcDriver"
+        url="jdbc:hsqldb:hsql://localhost"/>
+<!--
+    <ResourceLink name="jdbc/myds2"
+        global="jdbc/myds2"
+        type="javax.sql.DataSource"/>
+-->
+</Context>

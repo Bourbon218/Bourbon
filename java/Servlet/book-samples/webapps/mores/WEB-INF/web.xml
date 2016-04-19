@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"> 
+
+
+	<context-param>
+		<param-name>appkey1</param-name>
+		<param-value>appvalue1</param-value>
+	</context-param>
+	<context-param>
+		<param-name>appkey2</param-name>
+		<param-value>appvalue2</param-value>
+	</context-param>
+
+
+
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>filter.EncodingFilter</filter-class>
+	</filter>
+
+
+
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+    <servlet>
+        <servlet-name>InitParamServlet</servlet-name>
+        <servlet-class>init.InitParamServlet</servlet-class>
+		<init-param>
+			<param-name>key1</param-name>
+			<param-value>value1</param-value>
+		</init-param>
+		<init-param>
+			<param-name>key2</param-name>
+			<param-value>value2</param-value>
+		</init-param>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>InitParamServlet</servlet-name>
+		<url-pattern>/servlet/init.InitParamServlet</url-pattern>
+	</servlet-mapping>
+
+	
+	
+	
+
+    <!--invokerサーブレットがdisableでも動作するための設定-->
+    <servlet>
+        <servlet-name>ApplicationCounterServlet</servlet-name>
+        <servlet-class>app.ApplicationCounterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplicationCounterServlet</servlet-name>
+        <url-pattern>/servlet/app.ApplicationCounterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <servlet-class>app.LifeCycleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LifeCycleServlet</servlet-name>
+        <url-pattern>/servlet/app.LifeCycleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RoughCounterServlet</servlet-name>
+        <servlet-class>app.RoughCounterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoughCounterServlet</servlet-name>
+        <url-pattern>/servlet/app.RoughCounterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ThreadThinkServlet</servlet-name>
+        <servlet-class>app.ThreadThinkServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ThreadThinkServlet</servlet-name>
+        <url-pattern>/servlet/app.ThreadThinkServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BBSServlet4</servlet-name>
+        <servlet-class>cookie.BBSServlet4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BBSServlet4</servlet-name>
+        <url-pattern>/servlet/cookie.BBSServlet4</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CookieCounterServlet</servlet-name>
+        <servlet-class>cookie.CookieCounterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieCounterServlet</servlet-name>
+        <url-pattern>/servlet/cookie.CookieCounterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CookieListServlet</servlet-name>
+        <servlet-class>cookie.CookieListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieListServlet</servlet-name>
+        <url-pattern>/servlet/cookie.CookieListServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CounterServlet2</servlet-name>
+        <servlet-class>cookie.CounterServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CounterServlet2</servlet-name>
+        <url-pattern>/servlet/cookie.CounterServlet2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BBSServlet3</servlet-name>
+        <servlet-class>http.BBSServlet3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BBSServlet3</servlet-name>
+        <url-pattern>/servlet/http.BBSServlet3</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>http.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/servlet/http.RedirectServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <servlet-class>http.UserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInfoServlet</servlet-name>
+        <url-pattern>/servlet/http.UserInfoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AppInitParamServlet</servlet-name>
+        <servlet-class>init.AppInitParamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AppInitParamServlet</servlet-name>
+        <url-pattern>/servlet/init.AppInitParamServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BBSServlet</servlet-name>
+        <servlet-class>init.BBSServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BBSServlet</servlet-name>
+        <url-pattern>/servlet/init.BBSServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BBSServlet2</servlet-name>
+        <servlet-class>init.BBSServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BBSServlet2</servlet-name>
+        <url-pattern>/servlet/init.BBSServlet2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ClasspathFileServlet</servlet-name>
+        <servlet-class>init.ClasspathFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClasspathFileServlet</servlet-name>
+        <url-pattern>/servlet/init.ClasspathFileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ContextFileServlet</servlet-name>
+        <servlet-class>init.ContextFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContextFileServlet</servlet-name>
+        <url-pattern>/servlet/init.ContextFileServlet</url-pattern>
+    </servlet-mapping>
+
+	
+
+
+</web-app>
